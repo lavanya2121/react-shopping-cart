@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-
+// some changes
 function App() {
   return (
     <div className="grid-container">
