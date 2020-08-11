@@ -92,3 +92,30 @@ show the number of items
 12)Handle onSubmit form event by this.createOrder
 13)Create order object and pass to parent to handle it
 14)Publish changes
+15)pull request,merge,change to master
+16)TaskManagement spreadsheet make it done
+
+8)Add animation and modal
+-------------------------
+1)Set active task management spreadsheet
+2)Create a branch animation-modal
+3)Show Animation
+4)Install react-reveal
+5)Create fade effect from bottom for products
+6)Create fade left for add to cart
+7)Create fade right for show checkout form
+8)Open Modal by click on product image
+9)Install react-modal
+10)Product.js
+11)Import Modal
+12)Set state for product to null
+13)Define openModal and closeModal
+14)Show Modal if Product exists
+15)Create Modal
+16)Create zoom effects for Modal
+17)index.css
+18)Style Product details
+19)Commit and publish changes
+20)pull request,merge,change to master
+21)TaskManagement spreadsheet make it done
+
