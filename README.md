@@ -119,3 +119,17 @@ show the number of items
 20)pull request,merge,change to master
 21)TaskManagement spreadsheet make it done
 
+9)Create Products Backend
+-------------------------
+1)Install nodemon globally
+2)Add server.js
+3)Install express body-parser mongoose shortid
+4)Install MongoDB
+5)app=express()
+6)app.use(bodyParser.json())
+7)mongoose.connect()
+8)create Product model
+9)app.post("/api.products")
+10)postman send post requests
+11)route.get("/api/products")
+12)route.delete("/api/delete/:id")
