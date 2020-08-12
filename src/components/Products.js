@@ -114,6 +114,6 @@ import { fetchProducts } from '../actions/productActions';
         )
     }
 }
-export default connect((state)=>({products:state.products.items}),
+export default connect((state)=>({products:state.products.filteredItems}),
 {fetchProducts,
 })(Products);
