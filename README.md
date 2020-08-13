@@ -1,135 +1,35 @@
 #React Shopping Cart
 
-1)Tools and Technologies
------------------------
-Javascript---MDN Web Docs --documentation--PL used
-React--A Javascript library for building user interfaces---react.org
-Redux--A predictable State container for JS Apps--redux.js.org
-node--12.16.3 LTS (download)--nodejs.org--backend end point technology for creating apis
-mongodb--mongodb.com/download-center/community--->download it-->install it-->command prompt enter mongod
-development tools--->visual studio code---code.visualstudio.com--download and intall
-for visual studio code install some extensions
-1)Javascript (ES6) Code Snippets--install all 5
-2)ES7 React Extension
-3)ESLint Extension
-4)Node Debug
-5)CSS Peek
-Google chrome--install google chrome--google.com/chrome--download and install it
-git--git-scm.com--download and install--git is a version control tool
-github.com--create an account
-postman--postman.com
-heroku--(deployment)--to publish our work--heroku.com-signup --fill all your info--create an account
-mongodb.com/cloud/atlas--give your info--sign up and sign in--lavanya12gani@gmail.com--lavanyaharish216
-
-
-2)create-react-app
 ----------------
-command prompt
-project folder path>npx create-react-app react-shopping-cart21
-                   >cd react-shopping-cart21
-                   >code .
-		   >npm install react-scripts@2.1.8
-                   >npm start
+1)Backend
+2)server.js
+3)create order modal
+4)get /api/orders
+5)post /api/orders
+6)delete /api/orders/:id
+7)Frontend
+8)create types
+9)types.js
+10)CLEAR_ORDER,CLEAR_CART,CREATE_ORDER
+11)create actions
+12)actions/orderActions.js
+13)createOrder(order)
+14)clearOrder()
+15)create reducers
+16)reducers/OrderReducers.js
+17)case CREATE_ORDER
+18)case CLEAR_ORDER
+19)Update cart component
+20)components/Cart.js
+21)connect order,createOrder,clearOrder
+22)from onSubmit={this.createOrder}
+23)createOrder() this.props.createOrder(order)
+24)closeModal() this.props.clearOrder()
+25)render()
+26)const {cartItems,order}=this.props
+27){order && {<Modal></Modal>}
 
-3)Project Workflow
-------------------
-https://docs.google.com/spreadsheets/u/0/
-click on -->blank
+2.Add react Router
+npm install react-router
 
-control+enter command
-github
-commit
-master branch
-other branch
-synchronize the 2 master n other brancges
-
-4)Products List Components
-----------------------------
-
-git remote add origin https://github.com/lavanya2121/react-shopping-cart.git--must give this in another command prmpt to synchronise your code with github
-
-5)filter and sort
------------------
-
-6)Add items to cart
--------------------
-add items to cart
-remove items to cart
-show total
-show the number of items
-
--------------------
-1)create a branch cart-component
-2)product.js
-3)Handle "Add to Cart" to this.props.addToCart(product)
-4)App.js
-5)Add cart items to state as []
-6)Craete addToCart(product)
-7)Slice,check product existence, add to cartitems
-8)Cart.js
-9)Define cartItems, order from this.props
-10)check cartItems.length and show message
-11)List cart items {cartItems.length>0 && }
-12)index.css
-13)style cart,cart header,cart-items(img,li),
-14)use localStorage on app constructor to load cart items(JSON.Parse)
-15)use localStorage on addCart to save cartItems(JSON.stringify)
-
-
-7)Checkout Form
-----------------
-1)create a branch checkout-form
-2)Cart.js
-3)Make cartItems persistent
-4)Use LocalStorage on App constructor to load cart items(JSON.parse)
-5)use LocalStorage on addToCart to save cart Items (JSON.stringify)
-6)handle click on Process
-7)update showCheckout state to true on click
-8)conditional rendering checkout form
-9)Get Email,name ,address required input
-10)Define HandleInput Function
-11)Add checkout Button
-12)Handle onSubmit form event by this.createOrder
-13)Create order object and pass to parent to handle it
-14)Publish changes
-15)pull request,merge,change to master
-16)TaskManagement spreadsheet make it done
-
-8)Add animation and modal
--------------------------
-1)Set active task management spreadsheet
-2)Create a branch animation-modal
-3)Show Animation
-4)Install react-reveal
-5)Create fade effect from bottom for products
-6)Create fade left for add to cart
-7)Create fade right for show checkout form
-8)Open Modal by click on product image
-9)Install react-modal
-10)Product.js
-11)Import Modal
-12)Set state for product to null
-13)Define openModal and closeModal
-14)Show Modal if Product exists
-15)Create Modal
-16)Create zoom effects for Modal
-17)index.css
-18)Style Product details
-19)Commit and publish changes
-20)pull request,merge,change to master
-21)TaskManagement spreadsheet make it done
-
-9)Create Products Backend
--------------------------
-1)Install nodemon globally
-2)Add server.js
-3)Install express body-parser mongoose shortid
-4)Install MongoDB
-5)app=express()
-6)app.use(bodyParser.json())
-7)mongoose.connect()
-8)create Product model
-9)app.post("/api.products")
-10)postman send post requests
-11)route.get("/api/products")
-12)route.delete("/api/delete/:id")
+3.Add admin section
